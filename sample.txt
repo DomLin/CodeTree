@@ -1,0 +1,77 @@
+1. Entry Function
+   >> test/entry_file.c
+   // comment entry
+   // comment line 2
+   // comment line 3
+	2. Function 1
+	   >> test/file1.c
+	   // comment func 1
+	   // start %%<a target="_blank" href="sampleThread.txt.html">sampleThread</a>%%
+	2. Function 2
+	   >> test/file2.c
+	   // comment func 2
+		3. Function 2.1
+		   >> test/file2_1.c
+		   // comment func 2_1
+		3. Function 2.2
+		   >> test/file2_2.c
+		   // comment func 2_2
+	2. Function 3
+	   >> test/file3.c
+	   // comment func 3
+		3. Function 3.1
+		   >> test/file3_1.c
+		   // comment func 3_1
+			4. Function 3.1.1
+			   >> test/file3_1_1.c
+			   // comment func 3_1_1
+			4. Function 3.1.2
+			   >> test/file3_1_2.c
+			   // comment func 3_1_2
+				5. Function 3.1.2.1
+				   >> test/file_3_1_2_1.c
+				   // comment func_3_1_2_1
+		3. Function 3.2
+		   >> test/file3_2.c
+		   // comment func 3_2
+	2. Function 4
+	   >> test/file4.c
+	   // comment func 4
+	2. // Wait interrupt from %%<a target="_blank" href="sampleThread.txt.html#33" title="sampleThread.txt.html#33">sampleThread (ID: 33)</a>%%
+		3. :: switch (number)
+			4. :: case ONE:
+				5. Function in case
+			4. :: default:
+				5. Function in default
+		3. :: if (test == 1)
+			4. Function in if
+		3. :: else if (test == 2)
+			4. Function in else if
+		3. :: else
+			4. Function in else
+	2. >> test/file5
+		3. Function 5
+		   // comment func 5
+		   // Without \%\%: <a href="sample.txt.html">A link the sample.txt.html</a> comment
+		   // With \%\%: %%<a href="sample.txt.html">A link the sample.txt.html</a>%% comment
+	2. ...
+	2. ...
+	2. ...
+	2. ...
+	2. ...
+	2. ...
+	2. ...
+	2. ...
+	2. ...
+	2. ...
+	2. ...
+	2. ...
+	2. ...
+	2. ...
+	2. ...
+	2. ...
+	2. ...
+	2. ...
+	2. ...
+	2. ...
+	2. ...
