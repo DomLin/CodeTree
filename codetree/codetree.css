@@ -1,0 +1,101 @@
+/*
+ * CodeTree - Show codes as a tree
+ * 
+ * https://github.com/DomLin/CodeTree
+ *
+ * Copyright (c) 2013 Dom Lin
+ *
+ * Dual licensed under the MIT and GPL licenses:
+ *   http://www.opensource.org/licenses/mit-license.php
+ *   http://www.gnu.org/licenses/gpl.html
+ *
+ * Date: Mon Nov 11 14:45:26 CST 2013
+ *
+ */
+
+.treeview, .treeview ul { 
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+.treeview ul {
+	background-color: white;
+	margin-top: 4px;
+}
+
+.treeview .hitarea {
+	background: url(images/treeview-red.gif) -64px -25px no-repeat;
+	height: 16px;
+	width: 16px;
+	margin-left: -16px;
+	float: left;
+	cursor: pointer;
+}
+/* fix for IE6 */
+* html .hitarea {
+	display: inline;
+	float:none;
+}
+
+.treeview li { 
+	margin: 0;
+	padding: 3px 0pt 3px 16px;
+}
+
+.treeview a.selected {
+	background-color: #eee;
+}
+
+#treecontrol { margin: 1em 0; display: none; }
+
+.treeview .hover { color: blue; cursor: pointer; }
+
+.treeview li { background: url(images/treeview-red-line.gif) 0 0 no-repeat; }
+.treeview li.collapsable, .treeview li.expandable { background-position: 0 -176px; }
+
+.treeview .expandable-hitarea { background-position: -80px -3px; }
+
+.treeview li.last { background-position: 0 -25763px }
+.treeview li.lastCollapsable, .treeview li.lastExpandable { background-image: url(images/treeview-red.gif); }  
+.treeview li.lastCollapsable { background-position: 0 -111px }
+.treeview li.lastExpandable { background-position: -32px -67px }
+
+.treeview div.lastCollapsable-hitarea, .treeview div.lastExpandable-hitarea { background-position: 0; }
+
+.treeview .placeholder {
+	background: url(images/ajax-loader.gif) 0 0 no-repeat;
+	height: 16px;
+	width: 16px;
+	display: block;
+}
+
+.codetree li { padding: 3px 0 2px 16px; }
+.codetree span.file { margin: 0 0 0 16px; padding: 1px 0 1px 16px; color: #6666CC; }
+.codetree span.file { background: url(images/file.gif) 0 0 no-repeat; }
+.codetree span.fileHead { margin: 0; padding: 1px 0 1px 16px; color: #6666CC; }
+.codetree span.fileHead { background: url(images/file.gif) 0 0 no-repeat; }
+.codetree span.comment { margin: 0 0 0 16px; padding: 0 0 0 16px; color: #00AA00; }
+.codetree span.commentHead { margin: 0; padding: 0; color: #00AA00; }
+.codetree span.funcName { border-bottom: 1px dotted; }
+.codetree span.condition { margin: 0; padding: 0; color: #996600; }
+.codetree span.newline { display: block; padding: 0; margin: 0; }
+.codetree input { margin: 1px 0; vertical-align: middle; }
+.codetree .selected { background-color: #FF9999; }
+.codetree a, a:link, a:visited, a:hover, a:active { color: #0000FF; text-decoration: none; }
+.codetree a:hover { text-decoration: underline; }
+
+html, body { height: 100%; margin: 0; padding: 0; }
+
+html>body {
+	font-size: 16px; 
+	font-size: 68.75%;
+} /* Reset Base Font Size */
+
+body {
+	font-family: Verdana, helvetica, arial, sans-serif;
+	font-size: 68.75%;
+	background: #fff;
+	color: #333;
+	margin: 5px;
+}
