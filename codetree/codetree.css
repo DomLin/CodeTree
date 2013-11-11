@@ -1,6 +1,6 @@
 /*
  * CodeTree - Show codes as a tree
- * 
+ *
  * https://github.com/DomLin/CodeTree
  *
  * Copyright (c) 2013 Dom Lin
@@ -13,7 +13,7 @@
  *
  */
 
-.treeview, .treeview ul { 
+.treeview, .treeview ul {
 	padding: 0;
 	margin: 0;
 	list-style: none;
@@ -38,7 +38,7 @@
 	float:none;
 }
 
-.treeview li { 
+.treeview li {
 	margin: 0;
 	padding: 3px 0pt 3px 16px;
 }
@@ -52,12 +52,13 @@
 .treeview .hover { color: blue; cursor: pointer; }
 
 .treeview li { background: url(images/treeview-red-line.gif) 0 0 no-repeat; }
-.treeview li.collapsable, .treeview li.expandable { background-position: 0 -176px; }
+.treeview li.collapsable { background-image: url(images/treeview-red-line-2.gif); }
+.treeview li.expandable { background-image: url(images/treeview-red-line-2.gif); }
 
 .treeview .expandable-hitarea { background-position: -80px -3px; }
 
 .treeview li.last { background-position: 0 -25763px }
-.treeview li.lastCollapsable, .treeview li.lastExpandable { background-image: url(images/treeview-red.gif); }  
+.treeview li.lastCollapsable, .treeview li.lastExpandable { background-image: url(images/treeview-red.gif); }
 .treeview li.lastCollapsable { background-position: 0 -111px }
 .treeview li.lastExpandable { background-position: -32px -67px }
 
@@ -88,7 +89,7 @@
 html, body { height: 100%; margin: 0; padding: 0; }
 
 html>body {
-	font-size: 16px; 
+	font-size: 16px;
 	font-size: 68.75%;
 } /* Reset Base Font Size */
 
